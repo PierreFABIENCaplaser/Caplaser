@@ -3,6 +3,8 @@ body {
     padding: 0;
     overflow-x: hidden !important;
     font-family: 'Lato', sans-serif;
+    transform-style: preserve-3d;
+    image-rendering: smooth;
 }
 
 main {

@@ -23,7 +23,7 @@
     -ms-flex-align: start;
     align-items: flex-start;
 
-    width: 1300px;    
+    width: 1300px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0 !important;
@@ -31,11 +31,16 @@
     padding-top: 40px;
     padding-bottom: 80px;
 
-    .caplaser-footer-container-menu{
-        display: row;        
+    .caplaser-footer-container-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
 
-        .caplaser-footer-container-menu-competences {            
-            width: 220px;            
+        .caplaser-footer-container-menu-competences {
+            width: 220px;
 
             h5 {
                 font-size: 18px;
@@ -51,7 +56,8 @@
 
                 li {
                     list-style: none;
-                    a{                        
+
+                    a {
                         font-size: 14px;
                         font-weight: 400;
                         color: #2672d5;
@@ -62,8 +68,8 @@
             }
         }
 
-        .caplaser-footer-container-menu-autre {            
-            width: 220px;            
+        .caplaser-footer-container-menu-autre {
+            width: 220px;
 
             ul {
                 margin: 0;
@@ -71,6 +77,7 @@
 
                 li {
                     list-style: none;
+
                     a {
                         font-size: 18px;
                         color: #2672d5;
@@ -83,7 +90,7 @@
         }
     }
 
-    .caplaser-footer-container-social {                
+    .caplaser-footer-container-social {
         width: 220px;
 
         h5 {
@@ -100,7 +107,8 @@
 
             li {
                 list-style: none;
-                a {                    
+
+                a {
                     font-size: 14px;
                     font-weight: 400;
                     color: #2672d5;
@@ -115,7 +123,7 @@
         }
     }
 
-    .caplaser-footer-container-space {                
+    .caplaser-footer-container-space {
         width: 220px;
 
         h5 {
@@ -124,26 +132,84 @@
             color: #2672d5;
             margin: 0;
             line-height: 40px;
-        }      
+        }
 
         ul {
             margin: 0;
             padding: 0;
-            li{
+
+            li:nth-child(1) {
+                &::after{
+                    background-color: #4ec3e0 !important;
+                }
+            }
+
+            li:nth-child(2) {
+                &::after{
+                    background-color: #ffa300 !important;
+                }
+            }
+
+            li:nth-child(3) {
+                &::after{
+                    background-color: #eb6fbd !important;
+                }
+            }
+
+            li {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -2;
+                    left: 0;
+                    background-color: #2672d5;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    right: calc(-100% + 8px);
+                    transform-origin: center right;
+                    -webkit-transition: right, ease, .3s;
+                    -moz-transition: right, ease, .3s;
+                    -ms-transition: right, ease, .3s;
+                    -o-transition: right, ease, .3s;
+                    transition: right, ease, .3s;
+                }
+
+                &:hover {
+                    &::after {
+                        right: 0;
+                    }
+                }
+
                 font-size: 14px;
                 text-decoration: none;
                 display: block;
                 margin-bottom: 8px;
-                padding: 1.5rem 6.8rem 1.5rem 1.8rem;
-                height: 50px;
+                padding: 1rem 1rem 1rem 1.8rem;
                 text-transform: initial;
                 font-weight: 400;
                 text-align: left;
                 position: relative;
                 z-index: 5;
                 background-color: transparent;
-                color: #fff !important;
+
                 overflow: hidden;
+
+                a {
+                    color: #fff !important;
+                    text-decoration: none;
+                }
+
+
             }
         }
     }
@@ -152,11 +218,13 @@
 .caplaser-footer-bottom {
     padding: 25px 0;
     background-color: #2672d5;
+
     p {
         text-align: center;
         color: white;
         font-size: 12px;
         font-weight: bold;
+
         a {
             color: white;
             text-decoration: none;
