@@ -1,0 +1,375 @@
+<!DOCTYPE html lang="fr-FR">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ma description personnalisée"> <!-- Meta Description -->
+    <title>Caplaser</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+        integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+        crossorigin="anonymous" />
+</head>
+
+<body class="bodygestion ApplicatifsMetiers">
+    <header class="caplaser-header">
+        <div class="caplaser-header-logo">
+            <a href="/">
+                <img width="100%" height="100%" class="caplaser-header-logo-logo" src="/sources/img/logo_caplaser.svg"
+                    alt="Logo Caplaser">
+            </a>
+        </div>
+        <div class="caplaser-header-logo">
+            <div class="caplaser-header-logo-top">
+                <ul class="caplaser-header-logo-top-ul">
+                    <li class="caplaser-header-logo-top-ul-li">
+                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
+                            <span class="caplaser-header-logo-top-ul-li-a-span">Espace Client</span>
+                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="caplaser-header-logo-top-ul-li">
+                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
+                            <span class="caplaser-header-logo-top-ul-li-a-span">Recrutement</span>
+                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-file-alt"></i>
+                        </a>
+                    </li>
+                    <li class="caplaser-header-logo-top-ul-li">
+                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
+                            <span class="caplaser-header-logo-top-ul-li-a-span">Contact</span>
+                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="caplaser-header-logo-top-ul-liSearch">
+
+                        <input id="search" class="caplaser-header-logo-top-ul-li-a-span-input" type="text"
+                            placeholder="Rechercher..." aria-label="search">
+                        <label for="search">Recherche</label>
+                        <i class="caplaser-header-logo-top-ul-li-a-i fas fa-search"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="caplaser-header-logo-bottom">
+                <nav class="caplaser-header-logo-bottom-nav">
+                    <ul class="caplaser-header-logo-bottom-nav-ul">
+                        <li class="caplaser-header-logo-bottom-nav-ul-li">
+                            <div class="caplaser-header-logo-bottom-nav-ul-li-competences">
+                                Nos compétences <i
+                                    class="caplaser-header-logo-bottom-nav-ul-li-a-i fas fa-angle-down"></i>
+                            </div>
+
+                        </li>
+                        <li class="caplaser-header-logo-bottom-nav-ul-li">
+                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                                Événements
+                            </a>
+                        </li>
+                        <li class="caplaser-header-logo-bottom-nav-ul-li">
+                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                                Le Groupe Caplaser
+                            </a>
+                        </li>
+                        <li class="caplaser-header-logo-bottom-nav-ul-li">
+                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="caplaser-main">
+        <nav class="caplaser-nav">
+            <ul>
+                <li><a href="#">Nos produits <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <div class="caplaser-nav-ul-ul-left">
+                            <li><a href="/gestion.html">Gestion</a></li>
+                            <h3>Nos produits :</h3>
+                            <li><a href="/gestion/comptabilite-finances.html">Comptabilité & Finances</a></li>
+                            <li><a href="/gestion/Paie&RH.html">Paie & RH</a></li>
+                            <li><a href="/gestion/GESCO-Gestion-de-Production-CRM.html">Gestion commerciale</a></li>
+                            <li><a href="/gestion/BI-Dematerialisation.html">Gestion de production</a></li>
+                            <li><a href="/gestion/Immobilisation.html">CRM</a></li>
+                            <li><a href="/gestion/Immobilisation.html">BI & reporting</a></li>
+                            <li><a href="/gestion/Immobilisation.html">Dématerialisation</a></li>
+                            <li><a href="/gestion/Immobilisation.html">Applicatifs métiers</a></li>
+                        </div>
+                        <div class="caplaser-nav-ul-ul-right">
+                            <img src="/sources/img/Menu/picto_gestion_menu_bleu.svg" alt="">
+                        </div>
+                    </ul>
+                </li>
+
+                <li><a href="#">Nos partenaires <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <h3>Nos Partenaires :</h3>
+                        <li><a href="#">
+                                <div class="img-partenaire">
+                                    <img src="/sources/img/icon/Sage_logo.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="img-partenaire">
+                                    <img src="/sources/img/icon/divalto_Logo.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="img-partenaire">
+                                    <img src="/sources/img/icon/Cegid_logo.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="img-partenaire">
+                                    <img src="/sources/img/icon/reportone_logo.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="img-partenaire">
+                                    <img src="/sources/img/icon/silaexpert_logo.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="img-partenaire">
+                                    <img src="/sources/img/icon/OpenBee_logo.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="img-partenaire">
+                                    <img src="/sources/img/icon/hrmaps_logo.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <div class="img-partenaire">
+                                    <img src="/sources/img/icon/compagnons_logo.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <div class="caplaser-container">
+            <h3 class="caplaser-titre ll title-bold">Applicatifs métiers</h3>
+            <h5>
+                Nos progiciels conçus pour les entreprises de l’agro-industrie. Ils ont été développés en partenariat
+                avec des professionnels des métiers et répondent aux exigences de chaque activité.
+            </h5>
+        </div>
+
+        <div class="caplaser-container">
+            <div class="caplaser-container-card gestion">
+                <div class="caplaser-container-card-img">
+                    <img width="100%" height="100%" src="../sources/img/icon/gifelfruiegflor_logo.svg"
+                        alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-container-card-h3">
+                    GIFEL-FRUILEGFLOR
+                </h3>
+                <h4 class="caplaser-container-card-h4">
+                    <p>Solution métier pour le négoce des fruits et légumes
+                        Outil de gestion qui traite l’ensemble des tâches commerciales, comptables, logistiques et
+                        administratives de votre entreprise.
+                        De conception modulable et évolutive, il tient compte des contraintes et des exigences de tous
+                        les opérateurs de la filière fruits et légumes : grossistes, expéditeurs, importateurs et
+                        exportateurs.
+                        GIFEL-FRUILEGFLOR est certifiée IBM en tant que solution nationale fruits et légumes.
+                    </p>
+                </h4>
+            </div>
+            <div class="caplaser-container-card gestion">
+                <div class="caplaser-container-card-img">
+                    <img width="100%" height="100%" src="../sources/img/icon/Galaxia_logo.svg"
+                        alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-container-card-h3">
+                    Galaxia
+                </h3>
+                <h4 class="caplaser-container-card-h4">
+                    <p>Progiciel intégré pour la collecte et la paie du lait.
+                        Ce progiciel a été développé en partenariat avec des entreprises gérant 100 à plus de 1000
+                        producteurs.
+                        Cette solution à la pointe de l’innovation technologique vous garantit pérennité et sécurité.
+                        Elle est entièrement paramétrable et adaptée aux besoins métier, et elle intègre un module
+                        mobilité accessible d’un smartphone.
+                    </p>
+                </h4>
+            </div>
+            <div class="caplaser-container-card gestion">
+                <div class="caplaser-container-card-img">
+                    <img width="100%" height="100%" src="../sources/img/icon/centaure_logo.svg"
+                        alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-container-card-h3">
+                    Centaure
+                </h3>
+                <h4 class="caplaser-container-card-h4">
+                    <p>Solution métier pour les productions animales.
+                        Cette application couvre la totalité des besoins fonctionnels et techniques des professionnels
+                        des productions animales (porcine, bovine, ovine et palmipède). Développé en mode
+                        client-serveur, compatible avec la plupart des bases de données, il s’intègre dans tout système
+                        existant. Sa structure modulaire permet la personnalisation et l’adaptation à l’évolution des
+                        besoins.
+                    </p>
+                </h4>
+            </div>
+            <div class="caplaser-container-card gestion">
+                <div class="caplaser-container-card-img">
+                    <img width="100%" height="100%" src="../sources/img/icon/gaia_logo.svg" alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-container-card-h3">
+                    Gaïa
+                </h3>
+                <h4 class="caplaser-container-card-h4">
+                    <p>
+                        Solution métier pour les productions légumières
+                        Ce progiciel est conçu pour permettre aux organisations de producteurs (coopératives,
+                        groupements) de gérer leur activité en temps réel et au plus près du terrain. Il couvre toute la
+                        chaîne, depuis la gestion des contrats de production jusqu’aux expéditions à partir des sites de
+                        culture.
+                        Gaïa est la réponse globale qui assure la traçabilité, la logistique, l’administration, la
+                        communication, la collecte terrain avec terminaux portables de type PDA, la cartographie.
+                        Cette solution est certifiée IBM Galaxy.
+                    </p>
+                </h4>
+            </div>
+            <div class="caplaser-container-card gestion">
+                <div class="caplaser-container-card-img">
+                    <img width="100%" height="100%"
+                        src="../sources/img/icon/divafel_logo.svg"
+                        alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-container-card-h3">
+                    Divafel
+                </h3>
+                <h4 class="caplaser-container-card-h4">
+                    <p>
+                        Solution métier pour le négoce des fruits et légumes.
+                        Cet applicatif intègre les fonctionnalités de base de notre solution métier GIFEL-FRUILEGFLOR.
+                        DIVAFEL répond à une évolution plus moderne et évolutive. Elle intègre des fonctions nomades et
+                        s’appuie sur les nouvelles technologies de l’internet.
+                        Ce produit innovant sera commercialisé en mode Saas début 2021.
+
+                    </p>
+                </h4>
+            </div>
+        </div>       
+    </main>
+
+    <footer class="caplaser-footer">
+        <div class="caplaser-footer-container">
+            <div class="caplaser-footer-container-menu">
+                <nav class="caplaser-footer-container-menu-competences">
+                    <h5>Nos compétences</h5>
+                    <ul>
+                        <li>
+                            <a href="/">Cloud</a>
+                        </li>
+                        <li>
+                            <a href="/">infrastructure</a>
+                        </li>
+                        <li>
+                            <a href="/">Développement</a>
+                        </li>
+                        <li>
+                            <a href="/">Gestion</a>
+                        </li>
+                        <li>
+                            <a href="/">Conseil</a>
+                        </li>
+                        <li>
+                            <a href="/">Sécurité</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="caplaser-footer-container-menu-autre">
+                    <ul>
+                        <li>
+                            <a href="/">Événements</a>
+                        </li>
+                        <li>
+                            <a href="/">Le Groupe Caplaser</a>
+                        </li>
+                        <li>
+                            <a href="/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/">Recrutement</a>
+                        </li>
+                        <li>
+                            <a href="/">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="caplaser-footer-container-social">
+                <h5>Réseaux sociaux</h5>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="fab fa-linkedin-in"></i>
+                            Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="caplaser-footer-container-space">
+                <h5>Espace client</h5>
+                <ul>
+                    <li>Extranet</li>
+                    <li>Supervison</li>
+                    <li>Télémaintenance</li>
+                </ul>
+            </div>
+        </div>
+        <div class="caplaser-footer-bottom">
+            <p class="footer-copyright">©
+                2021 <a href="https://caplaser.fr/">Caplaser</a> voir les <a
+                    href="https://caplaser.fr/mentions-legales/" target="_self">mentions légales et la politique de
+                    confidentialité</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="/js/slider.js"></script>
+</body>
+
+</html>

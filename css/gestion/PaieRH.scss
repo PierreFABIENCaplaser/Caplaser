@@ -1,0 +1,60 @@
+.PaieRH {
+    .first-container { 
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        
+    }
+    
+    .caplaser-container-left {
+        width: 60% !important;
+        img {
+            object-fit: contain !important;
+            width: 100%;
+        }
+    }
+    
+    .caplaser-container-right {
+        width: 35% !important;
+        overflow: visible !important;
+        padding-left: 0px !important;
+
+        .caplaser-container {
+            width: 100% !important;
+            margin-top: 0px !important;
+            .caplaser-container-card {
+                height: 500px !important;
+            }            
+        }
+
+        .caplaser-container:nth-child(2){
+            margin-top: 110px !important;
+        }
+
+        .grid_tulipe {
+            width: 100% !important;
+
+
+            .grid_tulipe_large {
+                width: 270px;
+                height: 270px;
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+}

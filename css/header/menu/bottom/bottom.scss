@@ -1,0 +1,290 @@
+.caplaser-header-menu-bottom {
+    width: fit-content;
+    margin-top: 15px;
+
+    .caplaser-header-menu-bottom-nav {
+        .caplaser-header-menu-bottom-nav-ul {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            margin: 0 !important;
+            padding: 0 !important;
+
+            .caplaser-header-menu-bottom-nav-ul-li {
+                list-style: none;
+
+                .caplaser-header-menu-bottom-nav-ul-li-competences {
+                    font-size: 18px;
+                    background-color: white;
+                    text-decoration: none;
+                    font-weight: 500;
+                    padding: 22px 24px;
+                    color: #2672d5;
+                    transition: all .3s ease;
+                    letter-spacing: -0.4986px;
+
+                    .caplaser-header-menu-bottom-nav-ul-li-a-i {
+                        margin-left: 15px !important;
+                    }
+
+                    &.selected {
+                        background-color: #2672d5 !important;
+                        color: white !important;
+                    }
+
+                    .caplaser-header-menu-bottom-nav-ul-li-competences-i {
+                        margin-left: 15px;
+                    }
+
+                    &:hover {
+                        background-color: #2672d5;
+                        color: white;
+                    }
+                }
+
+                &:nth-child(1) {
+                    .caplaser-header-menu-bottom-nav-ul-li-a-ul {
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex-direction: row;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        -webkit-align-content: stretch;
+                        -ms-flex-line-pack: stretch;
+                        align-content: stretch;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+
+                        z-index: 10;
+                        position: absolute;
+                        width: 594px;
+                        height: 0;
+                        padding: 0 15px 0 15px;
+                        background-color: #2672d5;
+                        transition: 
+                            height .2s ease,
+                            padding .1s ease
+                            ;
+                        
+
+                        .caplaser-header-menu-bottom-nav-ul-li-a-ul-li {
+                            list-style: none;
+
+                            width: 190px;
+                            height: 0px;
+                            background-color: #e8f2ff;
+                            margin-bottom: 15px;
+
+                            &:hover {
+                                background-color: #fff;
+                                box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+                            }
+
+                            .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a {
+                                display: -ms-flexbox;
+                                display: -webkit-flex;
+                                display: flex;
+                                -webkit-flex-direction: column;
+                                -ms-flex-direction: column;
+                                flex-direction: column;
+                                -webkit-flex-wrap: wrap;
+                                -ms-flex-wrap: wrap;
+                                flex-wrap: wrap;
+                                -webkit-justify-content: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-align-content: stretch;
+                                -ms-flex-line-pack: stretch;
+                                align-content: stretch;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+
+                                position: absolute;
+                                width: 190px;
+                                height: 0px;
+                                transform: translateX(20px);
+                                text-decoration: none;
+                                transition: height 0s ease,
+                                            transform 1s ease ;
+
+                                .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2 {
+                                    text-align: center;
+                                    font-weight: normal;
+                                    color: #2672d5;
+                                    font-size: 0px;
+                                    font-weight: 400;
+                                    margin: 0;
+                                    opacity: 0;
+                                    transform: translateX(0px);
+                                    transition: 
+                                        opacity 0s ease,
+                                        font-size 0s linear, 
+                                        transform 1s ease;                                    
+                                }
+
+                                .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3 {
+                                    display: block;
+                                    font-size: 0px;
+                                    font-style: italic;
+                                    color: #2672d5;
+                                    margin-top: 12px;
+                                    text-align: center;
+                                    padding: 0 15px;
+                                    opacity: 0;
+                                    height: 45px;
+                                    transform: translateX(0px);
+                                    transition: 
+                                        opacity 0s ease, 
+                                        font-size 0s linear,                                        
+                                }
+
+                                .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img {
+                                    height: 0px;
+                                    width: 50px;
+                                    opacity: 0;                                    
+                                    transition: 
+                                        opacity 0s ease, 
+                                        font-size 0s linear,                                                                                 
+                                }
+                            }
+                        }
+
+                        .caplaser-header-menu-bottom-nav-ul-li-a-ul-li:nth-child(1) {
+                            h2 {
+                                color: #4ec3e0 !important;
+                            }
+                        }
+
+                        .caplaser-header-menu-bottom-nav-ul-li-a-ul-li:nth-child(2) {
+                            h2 {
+                                color: #ffa300 !important;
+                            }
+                        }
+
+                        .caplaser-header-menu-bottom-nav-ul-li-a-ul-li:nth-child(4) {
+                            h2 {
+                                color: #eb6fbd !important;
+                            }
+                        }
+
+                        .caplaser-header-menu-bottom-nav-ul-li-a-ul-li:nth-child(5) {
+                            h2 {
+                                color: #4ac263 !important;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .caplaser-header-menu-bottom-nav-ul-li-a-ul {
+                            height: 440px;
+                            padding: 15px;
+                            right: 50px;
+                            transition: 
+                            height .3s ease,
+                            padding-top .3s ease,
+                            padding-bottom .3s ease
+                            ;
+
+                            .caplaser-header-menu-bottom-nav-ul-li-a-ul-li {
+                                height: 190px;
+                                transition: 
+                                height .2s ease .2s,
+                                box-shadow .5s ease,
+                                background-color .5s ease;
+                            
+                                .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a {
+                                    height: 190px;
+                                    transform: translateX(0px);
+                                    transition: 
+                                        height .2s ease .1s,
+                                        transform .2s ease .5s;
+                                    
+                                    .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2 {
+                                        font-size: 20px;
+                                        opacity: 1;                                        
+                                        transition: 
+                                        opacity 1s ease .4s,
+                                        font-size .2s linear .1s,
+                                        transform .2s ease,                                        
+                                    }
+                                    .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3 {
+                                        font-size: 11px;
+                                        opacity: 1;                                        
+                                        transition: 
+                                        opacity 1s ease .4s, 
+                                        font-size .2s linear .1s,
+                                        transform .2s ease,                                        
+                                    }
+                                    .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img {
+                                        height: 50px;
+                                        opacity: 1;                                        
+                                        transition: 
+                                        opacity 1s ease .4s, 
+                                        height .2s linear .1s,                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a:hover {
+                        .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2 {
+                            transform: translateX(10px) !important;
+                            transition: transform 1s ease;                            
+                        }
+                        .caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3 {
+                            transform: translateX(-10px) !important;
+                            transition: transform 1s ease;
+                        }
+                    }
+                }
+
+                .caplaser-header-menu-bottom-nav-ul-li-a {
+                    font-size: 18px;
+                    background-color: white;
+                    text-decoration: none;
+                    font-weight: 500;
+                    padding: 22px 24px;
+                    color: #2672d5;
+                    transition: all .3s ease;
+                    letter-spacing: -0.4986px;
+
+                    &:hover {
+                        background-color: #2672d5;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.caplaser-header-menu-bottom-nav-ul-li-a-ul:hover ~ div {
+    background-color: #2672d5;
+    color: #fff;
+}

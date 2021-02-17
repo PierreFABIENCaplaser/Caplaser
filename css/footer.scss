@@ -1,0 +1,165 @@
+.caplaser-footer {
+    background-color: #e8f2ff;
+    margin-top: 80px;
+}
+
+.caplaser-footer-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    width: 1300px;    
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0 !important;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    .caplaser-footer-container-menu{
+        display: row;        
+
+        .caplaser-footer-container-menu-competences {            
+            width: 220px;            
+
+            h5 {
+                font-size: 18px;
+                text-decoration: none;
+                color: #2672d5;
+                margin: 0;
+                line-height: 30px;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    a{                        
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #2672d5;
+                        line-height: 30px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .caplaser-footer-container-menu-autre {            
+            width: 220px;            
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    a {
+                        font-size: 18px;
+                        color: #2672d5;
+                        line-height: 40px;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .caplaser-footer-container-social {                
+        width: 220px;
+
+        h5 {
+            font-size: 18px;
+            text-decoration: none;
+            color: #2672d5;
+            margin: 0;
+            line-height: 40px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                a {                    
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #2672d5;
+                    line-height: 40px;
+                    text-decoration: none;
+
+                    i {
+                        margin-right: 20px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .caplaser-footer-container-space {                
+        width: 220px;
+
+        h5 {
+            font-size: 18px;
+            text-decoration: none;
+            color: #2672d5;
+            margin: 0;
+            line-height: 40px;
+        }      
+
+        ul {
+            margin: 0;
+            padding: 0;
+            li{
+                font-size: 14px;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 8px;
+                padding: 1.5rem 6.8rem 1.5rem 1.8rem;
+                height: 50px;
+                text-transform: initial;
+                font-weight: 400;
+                text-align: left;
+                position: relative;
+                z-index: 5;
+                background-color: transparent;
+                color: #fff !important;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.caplaser-footer-bottom {
+    padding: 25px 0;
+    background-color: #2672d5;
+    p {
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

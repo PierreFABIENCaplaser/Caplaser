@@ -1,0 +1,24 @@
+.ApplicatifsMetiers {
+    h5 {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 26px;
+        color: #2672d5;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .caplaser-container-card {
+        width: 500px !important;
+        height: 550px !important;
+        margin-bottom: 50px !important;
+
+        .caplaser-container-card-h3 {
+            height: 70px !important;
+        }
+    }
+
+    .caplaser-container-card-img img {
+        object-fit: contain !important;
+    }
+}

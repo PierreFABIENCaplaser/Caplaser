@@ -1,0 +1,65 @@
+
+.caplaser-fullcontainer-partenaire {
+    width: 100vw;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .caplaser-fullcontainer-partenaire-slider {
+        width: 120vw;
+        height: 200px;
+        position: relative;
+        background: white;
+        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        overflow: hidden;
+    }
+
+    .caplaser-fullcontainer-partenaire-slider-slide {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        animation: slideshow 22s linear infinite;
+    }
+
+    .caplaser-fullcontainer-partenaire-slider-slide img {
+        height: 70px;
+        padding: 0 30px;
+    }
+
+    @keyframes slideshow {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .caplaser-fullcontainer-partenaire-slider::before,
+    .caplaser-fullcontainer-partenaire-slider::after {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        content: "";
+        background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0) 100%);
+        z-index: 2;
+    }
+
+    .caplaser-fullcontainer-partenaire-slider::before {
+        top: 0;
+        left: 0;
+    }
+
+    .caplaser-fullcontainer-partenaire-slider::after {
+        top: 0;
+        right: 0;
+        transform: rotateZ(180deg);
+    }
+}
