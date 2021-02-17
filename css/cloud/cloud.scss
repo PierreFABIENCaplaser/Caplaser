@@ -159,3 +159,64 @@
         background-color: #4ec3e0;
     }
 }
+
+.grid-container {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.4fr 1.6fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Server Server Server mail mail keep keep"
+      "Server Server Server mail mail keep keep"
+      "Server Server Server Dock Dock transfert transfert"
+      "Server Server Server Dock Dock transfert transfert";
+  }
+  
+  .Server { grid-area: Server; }
+  
+  .mail { grid-area: mail; }
+  
+  .keep { grid-area: keep; }
+  
+  .Dock { grid-area: Dock; }
+  
+  .transfert { grid-area: transfert; }
+  
+  
+  .Server { 
+    grid-area: Server;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+  
+  .mail { 
+    grid-area: mail;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+  
+  .keep { 
+    grid-area: keep;
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+}
+  
+  .Dock { 
+    grid-area: Dock;
+    background-color: green;
+    width: 100%;
+    height: 100%;
+}
+  
+  .transfert { 
+    grid-area: transfert;
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+}
+  
