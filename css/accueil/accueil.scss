@@ -1,157 +1,17 @@
 .containerHome {
 
     .caplaser-main-titre {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 
     .caplaser-main-subtitre {
         margin-top: 0;
         font-size: 25px;
         text-align: justify;
-        margin: 20px 0px;
     }
 }
 
-.accueilContact {
-    height: 300px;
-    background: linear-gradient(236deg, rgba(85, 185, 236, 1) 0%, rgba(38, 114, 213, 1) 100%);
-    margin-top: 70px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    justify-content: center !important;
-    flex-direction: column !important;
-
-    h2 {
-        color: white;
-    }
-
-    a {
-        background: white;
-        padding: 20px 30px;
-        border: none;
-        color: #2672d5;
-        font-size: 18px;
-        border-radius: 15px;
-        text-decoration: none;
-    }
-}
-
-.caplaser-main-container-box {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-
-    width: 1600px;
-}
-
-.caplaser-main-container-number {
-
-    &.first {
-        width: 44% !important;
-        height: 500px;
-        border-bottom-right-radius: 0px;
-    }
-
-    &.second {
-        border-bottom-right-radius: 0px;
-    }
-
-    &.third {
-        border-bottom-right-radius: 0px;
-    }
-
-    &.fourth {
-        margin: 20px 0px 0px 0px !important;
-        width: auto !important;
-    }
-
-    color: #fff;
-    background: linear-gradient(30deg, rgba(255, 255, 255, 1) 0%, rgba(232, 242, 255, 1) 100%);
-    border-bottom-right-radius: 40px;
-    border: 1px solid #2672d5;
-    padding: 20px 20px 60px;
-    margin-top: 0 !important;
-    position: relative;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: all,
-    ease,
-    1s;
-    width: 270px !important;
-    height: 200px;
-
-    &:hover {
-        box-shadow: 0 19px 38px rgb(38 114 213 / 30%), 0 15px 12px rgb(78 195 224 / 22%);
-
-        h2 {
-            transform: translateX(10px);
-        }
-    }
-
-
-    h2 {
-
-        font-weight: 900;
-        margin-bottom: 15px;
-        font-size: 80px;
-        letter-spacing: 0;
-        margin: 0;
-        color: #2672d5;
-        transition: all 1s ease;
-        transform: translateX(0px);
-    }
-
-    h4 {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 26px;
-        color: #2672d5;
-        text-align: left;
-    }
-}
-
-.caplaser-main-container-nomberbox {
-    width: 51%;
-    height: 582px;
-
-    .caplaser-main-container-nomberbox-box {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-}
-
-.caplaser-main-container-first {
+.caplaser-main-container-accueil-first {
     width: 1600px;
     height: 800px;
     display: grid;
@@ -222,7 +82,6 @@
         grid-area: infrastructure;
         width: 100%;
         height: 100%;
-        background-color: brown;
         background-image: url(https://nexago.fr/wp-content/uploads/2019/09/informatique_infrastructure.jpg);
     }
 
@@ -238,7 +97,6 @@
         grid-area: partenariat;
         width: 100%;
         height: 100%;
-        background-color: yellow;
 
         h3 {
             text-align: center !important;
@@ -249,7 +107,6 @@
         grid-area: sur-mesure;
         width: 100%;
         height: 100%;
-        background-color: blue;
         background-image: url(./../sources/img/accueil/1.jpg);
     }
 
@@ -257,8 +114,128 @@
         grid-area: expert;
         width: 100%;
         height: 100%;
-        background-color: brown;
         background-image: url(./../sources/img/accueil/3.jpg);
         border-bottom-right-radius: 50px;
+    }
+}
+
+.caplaser-main-container-accueil-second {
+    width: 1600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+        "chiffreAff chiffreAff chiffreAff collaborateurs collaborateurs sites sites"
+        "chiffreAff chiffreAff chiffreAff clients clients clients clients";
+
+    div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+
+        color: #fff;
+        background: linear-gradient(30deg, rgba(255, 255, 255, 1) 0%, rgba(232, 242, 255, 1) 100%);
+        border: 1px solid #2672d5;
+        margin-top: 0 !important;
+        position: relative;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: all ease 1s;
+
+        &:hover {
+            box-shadow: 0 19px 38px rgb(38 114 213 / 30%), 0 15px 12px rgb(78 195 224 / 22%);
+
+            h2 {
+                transform: translateX(10px);
+            }
+        }
+
+
+        h2 {
+            font-weight: 900;
+            margin-bottom: 15px;
+            font-size: 80px;
+            letter-spacing: 0;
+            color: #2672d5;
+            transition: all 1s ease;
+            transform: translateX(0px);
+
+            width: 90%;
+            margin-top: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        h4 {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: #2672d5;
+            text-align: left;
+
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+
+
+    .chiffreAff {
+        grid-area: chiffreAff;
+        width: 100%;
+        height: 100%;
+        background-color: brown;
+    }
+
+    .collaborateurs {
+        grid-area: collaborateurs;
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+    }
+
+    .sites {
+        grid-area: sites;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+
+    .clients {
+        grid-area: clients;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        border-bottom-right-radius: 50px;
+    }
+}
+
+.accueilContact {
+    height: 300px;
+    background: linear-gradient(236deg, rgba(85, 185, 236, 1) 0%, rgba(38, 114, 213, 1) 100%);
+    margin-top: 70px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    h2 {
+        color: white;
+    }
+
+    a {
+        background: white;
+        padding: 20px 30px;
+        border: none;
+        color: #2672d5;
+        font-size: 18px;
+        border-radius: 15px;
+        text-decoration: none;
     }
 }
