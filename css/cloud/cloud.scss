@@ -1,0 +1,39 @@
+.CloudPage {
+    .caplaser-main-titre{
+        margin-bottom: 70px;
+        padding-left: 15px;
+        border-left: 10px solid #4ec3e0;
+    }
+    .caplaser-main-container-box-left-first.background-unset {
+        background-image: none !important;
+        background-color: white !important;
+    }
+    .caplaser-main-container-box-right-third.background-unset {
+        background-image: none !important;
+        background-color: white !important;
+    }
+
+
+
+    .caplaser-main-container-box-left-first {
+        border: 1px solid #4ec3e0 !important;
+    }
+
+    .caplaser-main-container-box-left-second {
+        border: 1px solid #4ec3e0 !important;
+        h2 {
+            font-size: 100px !important;
+            color: #4ec3e0 !important;
+        }
+    }
+
+    .caplaser-main-container-box-right-third {
+        border: 1px solid #4ec3e0 !important;
+        height: 680px !important;
+        h4 {
+            color: #4ec3e0;
+            font-size: 30px;
+            width: 100%;
+        }
+    }
+}
