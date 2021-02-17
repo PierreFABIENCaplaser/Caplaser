@@ -1,12 +1,12 @@
 <!DOCTYPE html lang="fr-FR">
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ma description personnalisée"> <!-- Meta Description -->
     <title>Caplaser</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
@@ -14,18 +14,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
-        integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
-        crossorigin="anonymous" />
 </head>
 
-<body class="bodygestion">
+<body>
     <header class="caplaser-header">
         <div class="caplaser-header-logo">
             <a href="/">
@@ -33,58 +24,138 @@
                     alt="Logo Caplaser">
             </a>
         </div>
-        <div class="caplaser-header-logo">
-            <div class="caplaser-header-logo-top">
-                <ul class="caplaser-header-logo-top-ul">
-                    <li class="caplaser-header-logo-top-ul-li">
-                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
-                            <span class="caplaser-header-logo-top-ul-li-a-span">Espace Client</span>
-                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-user"></i>
+        <div class="caplaser-header-menu">
+            <div class="caplaser-header-menu-top">
+                <ul class="caplaser-header-menu-top-ul">
+                    <li class="caplaser-header-menu-top-ul-li">
+                        <a class="caplaser-header-menu-top-ul-li-a" href="/">
+                            <span class="caplaser-header-menu-top-ul-li-a-span">Espace Client</span>
+                            <i class="caplaser-header-menu-top-ul-li-a-i far fa-user"></i>
                         </a>
                     </li>
-                    <li class="caplaser-header-logo-top-ul-li">
-                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
-                            <span class="caplaser-header-logo-top-ul-li-a-span">Recrutement</span>
-                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-file-alt"></i>
+                    <li class="caplaser-header-menu-top-ul-li">
+                        <a class="caplaser-header-menu-top-ul-li-a" href="/">
+                            <span class="caplaser-header-menu-top-ul-li-a-span">Recrutement</span>
+                            <i class="caplaser-header-menu-top-ul-li-a-i far fa-file-alt"></i>
                         </a>
                     </li>
-                    <li class="caplaser-header-logo-top-ul-li">
-                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
-                            <span class="caplaser-header-logo-top-ul-li-a-span">Contact</span>
-                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-envelope"></i>
+                    <li class="caplaser-header-menu-top-ul-li">
+                        <a class="caplaser-header-menu-top-ul-li-a" href="/">
+                            <span class="caplaser-header-menu-top-ul-li-a-span">Contact</span>
+                            <i class="caplaser-header-menu-top-ul-li-a-i far fa-envelope"></i>
                         </a>
                     </li>
-                    <li class="caplaser-header-logo-top-ul-liSearch">
+                    <li class="caplaser-header-menu-top-ul-liSearch">
 
-                        <input id="search" class="caplaser-header-logo-top-ul-li-a-span-input" type="text"
+                        <input id="search" class="caplaser-header-menu-top-ul-li-a-span-input" type="text"
                             placeholder="Rechercher..." aria-label="search">
                         <label for="search">Recherche</label>
-                        <i class="caplaser-header-logo-top-ul-li-a-i fas fa-search"></i>
+                        <i class="caplaser-header-menu-top-ul-li-a-i fas fa-search"></i>
                     </li>
                 </ul>
             </div>
-            <div class="caplaser-header-logo-bottom">
-                <nav class="caplaser-header-logo-bottom-nav">
-                    <ul class="caplaser-header-logo-bottom-nav-ul">
-                        <li class="caplaser-header-logo-bottom-nav-ul-li">
-                            <div class="caplaser-header-logo-bottom-nav-ul-li-competences">
+            <div class="caplaser-header-menu-bottom">
+                <nav class="caplaser-header-menu-bottom-nav">
+                    <ul class="caplaser-header-menu-bottom-nav-ul">
+                        <li class="caplaser-header-menu-bottom-nav-ul-li">
+                            <div class="caplaser-header-menu-bottom-nav-ul-li-competences">
                                 Nos compétences <i
-                                    class="caplaser-header-logo-bottom-nav-ul-li-a-i fas fa-angle-down"></i>
+                                    class="caplaser-header-menu-bottom-nav-ul-li-a-i fas fa-angle-down"></i>
                             </div>
-
+                            <ul class="caplaser-header-menu-bottom-nav-ul-li-a-ul">
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Cloud
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Sécurisez, sauvegardez, partagez, collaborez grâce à la puissance du Cloud
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="/sources/img/Menu/picto_cloud_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Infastructure
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Conseil, déploiement, maintenance : toute l’IT pour votre entreprise
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="/sources/img/Menu/picto_infra_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Conseil
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Bénéficiez d’audits et de conseils de spécialistes selon vos besoins
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="/sources/img/Menu/picto_conseil_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Développement
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Sites internet responsives, applications, intranets / extranets
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="/sources/img/Menu/picto_web_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Gestion
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Dématérialisez la gestion de votre entreprise : bulletins de paie, factures,
+                                            RH…
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="/sources/img/Menu/picto_gestion_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Sécurité
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Vos données protégées sur notre datacenter situé en Occitanie
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="/sources/img/Menu/picto_securite_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="caplaser-header-logo-bottom-nav-ul-li">
-                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                        <li class="caplaser-header-menu-bottom-nav-ul-li">
+                            <a class="caplaser-header-menu-bottom-nav-ul-li-a" href="/">
                                 Événements
                             </a>
                         </li>
-                        <li class="caplaser-header-logo-bottom-nav-ul-li">
-                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                        <li class="caplaser-header-menu-bottom-nav-ul-li">
+                            <a class="caplaser-header-menu-bottom-nav-ul-li-a" href="/">
                                 Le Groupe Caplaser
                             </a>
                         </li>
-                        <li class="caplaser-header-logo-bottom-nav-ul-li">
-                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                        <li class="caplaser-header-menu-bottom-nav-ul-li">
+                            <a class="caplaser-header-menu-bottom-nav-ul-li-a" href="/">
                                 Blog
                             </a>
                         </li>
@@ -95,108 +166,30 @@
     </header>
 
     <main class="caplaser-main">
-
-        <nav class="caplaser-nav">
-            <ul>
-                <li><a href="#">Nos produits <i class="fas fa-caret-down"></i></a>
-                    <ul>
-                        <div class="caplaser-nav-ul-ul-left">
-                            <li><a href="/gestion.html">Gestion</a></li>
-                            <h3>Nos produits :</h3>
-                            <li><a href="/gestion/comptabilite-finances.html">Comptabilité & Finances</a></li>
-                            <li><a href="/gestion/Paie&RH.html">Paie & RH</a></li>
-                            <li><a href="/gestion/GESCO-Gestion-de-Production-CRM.html">Gestion commerciale</a></li>
-                            <li><a href="/gestion/BI-Dematerialisation.html">Gestion de production</a></li>
-                            <li><a href="/gestion/Immobilisation.html">CRM</a></li>
-                            <li><a href="/gestion/Immobilisation.html">BI & reporting</a></li>
-                            <li><a href="/gestion/Immobilisation.html">Dématerialisation</a></li>
-                            <li><a href="/gestion/ApplicatifsMetiers.html">Applicatifs métiers</a></li>
-                        </div>
-                        <div class="caplaser-nav-ul-ul-right">
-                            <img src="/sources/img/Menu/picto_gestion_menu_bleu.svg" alt="">
-                        </div>
-                    </ul>
-                </li>
-
-                <li><a href="#">Nos partenaires <i class="fas fa-caret-down"></i></a>
-                    <ul>
-                        <h3>Nos Partenaires :</h3>
-                        <li><a href="#">
-                                <div class="img-partenaire">
-                                    <img src="/sources/img/icon/Sage_logo.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="img-partenaire">
-                                    <img src="/sources/img/icon/divalto_Logo.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="img-partenaire">
-                                    <img src="/sources/img/icon/Cegid_logo.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="img-partenaire">
-                                    <img src="/sources/img/icon/reportone_logo.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="img-partenaire">
-                                    <img src="/sources/img/icon/silaexpert_logo.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="img-partenaire">
-                                    <img src="/sources/img/icon/OpenBee_logo.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="img-partenaire">
-                                    <img src="/sources/img/icon/hrmaps_logo.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <div class="img-partenaire">
-                                    <img src="/sources/img/icon/compagnons_logo.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-        </nav>
-
-
         <div class="caplaser-main-slider">
             <div class="caplaser-main-slider-slides">
                 <div class="slide caption active">
                     <div class="caplaser-main-slider-slides-slide-left">
                         <div class="titre">
-                            <h4 class="title-bold">Gestion</h4>
+                            <h4 class="title-bold">Hyperconvergence</h4>
                         </div>
                         <div class="texte">
                             <h5>
-                                La comptabilité, ou gestion comptable de l’entreprise, comprend trois champs principaux
-                                : la comptabilité générale, qui apporte une image globale de la situation économique de
-                                l’entreprise à un instant donné, la comptabilité auxiliaire, qui donne une indication de
-                                sa solvabilité, et la comptabilité analytique, qui s’intéresse à la rentabilité par
-                                ligne de produits ou de services.
+                                L’<a href="https://www.vmware.com/fr/products/hyper-converged-infrastructure.html"
+                                    target="_blank" rel="noopener"><strong>infrastructure hyperconvergée</strong></a>
+                                est l’aboutissement du pilotage des systèmes par le logiciel.<br> Elle unifie stockage,
+                                calcul, réseau et gestion de l’ensemble. En réduisant la complexité de votre
+                                infrastructure, elle en augmente la <strong>capacité à s’adapter à votre
+                                    évolution</strong>.<br /><br />
 
-
+                                Dois-je <strong>unifier </strong>mes systèmes ? en augmenter la
+                                <strong>résilience</strong> ? en <strong>simplifier</strong> l’exploitation ? Gérer mon
+                                <em>capacity planning</em> ?
                             </h5>
                         </div>
                         <div class="slogan">
                             <h6>
-                                La gestion comptable, fonction centrale de l’entreprise
+                                Etudions ensemble votre future architecture hyperconvergée !
                             </h6>
                         </div>
                         <a class="contact" href="/">
@@ -206,26 +199,27 @@
 
                     </div>
                     <div class="caplaser-main-slider-slides-slide-right">
-                        <img width="100%" height="100%"
-                            src="https://www.aadprox.com/wp-content/uploads/2018/07/gestion-comptable-aadprox-1024x683.jpg"
-                            alt="hyperconvergence">
+                        <img width="100%" height="100%" src="/sources/img/hyperconvergence.jpg" alt="hyperconvergence">
                     </div>
                 </div>
                 <div class="slide caption">
                     <div class="caplaser-main-slider-slides-slide-left">
                         <div class="titre">
-                            <h4>
-                                Comptabilité : Définition d’une solution de comptabilité et gestion comptable
-                            </h4>
+                            <h4>Caplaser vous accompagne et vous conseille sur tous vos projets IT</h4>
                         </div>
                         <div class="texte">
                             <h5>
-                                La comptabilité auxiliaire recense selon un horizon glissant identique les dettes
-                                fournisseurs et les créances clients de entreprise. L’intérêt de la comptabilité
-                                auxiliaire, centrée sur les éléments variables de la production du résultat, est de deux
-                                ordres. Sur une période longue, la différence entre les deux postes est un indicateur de
-                                la capacité de l’organisation à équilibrer sa comptabilité. Sur une période courte, la
-                                balance auxiliaire permet à l’entreprise d’anticiper un éventuel besoin de trésorerie.
+                                Comment&nbsp;? En <strong>agrégeant nos domaines d’expertise</strong>&nbsp;: <a
+                                    href="https://caplaser.fr/nos-competences/infrastructure/">infrastructure</a> et <a
+                                    href="https://caplaser.fr/nos-competences/securite/">sécurité informatique</a>,
+                                conseil en <a href="https://caplaser.fr/nos-competences/gestion/">gestion</a> et <a
+                                    href="https://caplaser.fr/nos-competences/internet/">développement logiciel</a> qui
+                                sont les composants essentiels de votre système d’information. Ainsi, nous pouvons vous
+                                proposer les solutions les mieux adaptées à vos demandes.<br /><br />
+
+                                Nous vous accompagnons dans le <strong>choix</strong>, la <strong>mise en œuvre</strong>
+                                et le <strong>maintien en condition</strong> opérationnelle de la solution qui vous
+                                épaulera dans la conduite de votre entreprise.
                             </h5>
                         </div>
                         <a class="contact" href="/">
@@ -239,348 +233,172 @@
                 </div>
             </div>
 
-            <!-- controls  -->
+
             <div class="controls">
                 <div class="prev"></div>
                 <div class="next"></div>
             </div>
 
-            <!-- indicators -->
+
 
             <div class="indicator"></div>
 
         </div>
 
-        <div class="caplaser-container">
-            <div class="caplaser-container-left">
-                <h3 class="caplaser-titre">Présentation</h3>
-                <p class="caplaser-paragraphe">
-                    Fort de plus 30 ans d’expérience, le Groupe CAPLASER est spécialisé dans l’intégration de solutions
-                    de gestion. Présent en Occitanie et Nouvelle-Aquitaine autour de ses 5 agences (Agen – Castres –
-                    Narbonne – Tarbes et Toulouse), nous accompagnons au quotidien des TPE/PME/ETI dans les
-                    domaines suivants :
-                </p>
-                <ul class="caplaser-paragraphe">
-                    <li>Logiciels de gestion, ERP et CRM</li>
-                    <li>Hébergement et services managés</li>
-                    <li>Dématérialisation et Reporting</li>
-                </ul>
-                <p class="caplaser-paragraphe">
-                    Le groupe CAPLASER distribue et déploie des solutions ERP des 3 principaux leaders nationaux que
-                    sont SAGE, CEGID et DIVALTO.
-                    Nos consultants sont polyvalents et experts dans leur métier. Ils conseillent, déploient et
-                    maintiennent des solutions collaboratives et flexibles.
-                </p>
+        <h3 class="caplaser-main-titre">
+            Construisons ensemble <br/>votre projet de demain !
+        </h3>
+
+        <div class="caplaser-main-container">
+            <div class="caplaser-main-container-card cloud">
+                <div class="caplaser-main-container-card-img">
+                    <img width="100%" height="100%" src="/sources/img/businessman_sunrise.jpg"
+                        alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-main-container-card-h3">
+                    <span class="title-bold">Cloud</span>: <br /> nos solutions<br />
+                    hébergées
+                </h3>
+                <h4 class="caplaser-main-container-card-h4">
+                    Caplaser vous propose une gamme complète de solution hébergées
+                    pour répondre à vos besoins.
+                </h4>
+                <a href="/" class="caplaser-main-container-card-btn">
+                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
+                </a>
             </div>
-            <div class="caplaser-container-right">
-                <img src="/sources/img/gestion.png" alt="map">
+            <div class="caplaser-main-container-card gestion">
+                <div class="caplaser-main-container-card-img">
+                    <img width="100%" height="100%" src="/sources/img/gestion.jpg" alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-main-container-card-h3">Accompagnement et solutions de <br />
+                    <span class="title-bold">gestion</span>
+                </h3>
+                <h4 class="caplaser-main-container-card-h4">
+                    PME, optimisez vos activités grâce à nos logiciels de gestion intégrés collaboratifs et flexibles.
+                </h4>
+                <a href="/gestion.html" class="caplaser-main-container-card-btn">
+                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
+                </a>
+            </div>
+            <div class="caplaser-main-container-card developpement">
+                <div class="caplaser-main-container-card-img">
+                    <img width="100%" height="100%" src="/sources/img/developpement.jpg" alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-main-container-card-h3"><span class="title-bold">Développement</span><br />
+                    sites web <br /> et
+                    logiciels
+                </h3>
+                <h4 class="caplaser-main-container-card-h4">
+                    Des solutions logicielles natives, web ou mobiles adaptées pour optimiser vos tâches.
+                </h4>
+                <a href="/" class="caplaser-main-container-card-btn">
+                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
+                </a>
+            </div>
+            <div class="caplaser-main-container-card infastructure">
+                <div class="caplaser-main-container-card-img">
+                    <img width="100%" height="100%" src="/sources/img/infogerance.jpg" alt="businessman sunrise">
+                </div>
+                <h3 class="caplaser-main-container-card-h3">Déploiement et
+                    infogérance <br>
+                    d’<span class="title-bold">infrastructures</span> IT
+                </h3>
+                <h4 class="caplaser-main-container-card-h4">
+                    Tout le matériel informatique de votre entreprise, installé, géré et maintenu par nos soins.
+                </h4>
+                <a href="/" class="caplaser-main-container-card-btn">
+                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
+                </a>
             </div>
         </div>
 
-        <div class="caplaser-box">
-            <div class="caplaser-box-left">
-                <h2 class="caplaser-box-titre">Organisation / Méthodologie</h2>
-                <p class="caplaser-box-paragraphe">
-                    Notre BU Gestion est organisée par métier et pilotée par la direction de projets.
-                    Chaque projet qu’il soit simple ou complexe, s’appuie sur une équipe de consultants suivant un
-                    processus bien précis :
+        <div class="caplaser-main-container containerHome">
+            <h3 class="caplaser-main-titre">
+                Faites confiance à nos experts <br/> et donnez vie à vos projets !
+            </h3>
+            <h4 class="caplaser-main-subtitre">
+                Pourquoi nous faire confiance ?
+            </h4>
 
-                </p>
-            </div>
-            <div class="caplaser-box-right">
-
-                <!-- https://codepen.io/aminakmali/pens/public -->
-                <div class="card">
-                    <input type="radio" name="select" id="slide_1" checked>
-                    <input type="radio" name="select" id="slide_2">
-                    <input type="radio" name="select" id="slide_3">
-                    <input type="radio" name="select" id="slide_4">
-                    <input type="radio" name="select" id="slide_5">
-                    <input type="checkbox" id="slideImg">
-
-                    <div class="slider">
-                        <label for="slide_1" class="slide slide_1"></label>
-                        <label for="slide_2" class="slide slide_2"></label>
-                        <label for="slide_3" class="slide slide_3"></label>
-                        <label for="slide_4" class="slide slide_4"></label>
-                        <label for="slide_5" class="slide slide_5"></label>
+            <div class="caplaser-main-container-box">
+                <div class="caplaser-main-container-box-left">
+                    <div class="caplaser-main-container-box-left-first">
+                        <h2>Infrastructure de pointe et hautement sécurisée</h2>
+                        <h3>Grâce à notre infrastructure solide, nous vous garantissons un hébergement sur nos serveurs
+                            sécurisés et accessible quand vous le désirez.</h3>
                     </div>
+                    <div class="caplaser-main-container-box-left-second">
+                        <h2>Un partenariat gagnant</h2>
+                        <h3>Un accompagnement solide et personnalisé pour vos choix informatiques.</h3>
+                    </div>
+                </div>
+                <div class="caplaser-main-container-box-right">
+                    <div class="caplaser-main-container-box-right-third">
+                        <h2>Des solutions sur-mesure</h2>
+                        <h3>Construisons ensemble un projet qui vous ressemble, tout en l’adaptant à vos besoins et à
+                            votre budget.</h3>
+                    </div>
+                    <div class="caplaser-main-container-box-right-fourth">
+                        <h2>Une équipe d’experts en nouvelles technologies</h2>
+                        <h3>Faites confiance à nos équipes d’experts pour réaliser tous vos projets et vous aider à
+                            faire grandir votre entreprise.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caplaser-main-container">
+            <h3 class="caplaser-main-titre">
+                Caplaser en chiffre
+            </h3>
 
-                    <div class="inner_part">
-                        <label for="slideImg" class="img">
-                            <img class="img_1"
-                                src="http://www.basetenadvisory.com/wp-content/uploads/2015/10/blog-how-non-accountants-can-add-value-to-budgeting-and-forecasting.jpg">
-                        </label>
-                        <div class="content content_1">
-                            <div class="title">Première étape</div>
-                            <div class="text">
-                                Avant-vente : écoute, analyse des besoins et rédaction d’un cahier de charges
-                            </div>
 
+
+
+
+
+
+
+
+
+
+            <div class="caplaser-main-container">
+
+                <div class="caplaser-main-container-number first">
+                    <h2>9 164</h2>
+                    <h4>k€ de CA en 2019 (4% de croissance, avec 12% de croissance sur les solutions hébergées)</h4>
+                </div>
+
+                <div class="caplaser-main-container-nomberbox">
+
+
+                    <div class="caplaser-main-container-nomberbox-box">
+                        <div class="caplaser-main-container-number second">
+                            <h2>64</h2>
+                            <h4>collaborateurs fidèles et investis, avec un âge moyen de 46 ans et une ancienneté moyenne de 14
+                                ans.</h4>
+                        </div>
+                        <div class="caplaser-main-container-number third">
+                            <h2>5</h2>
+                            <h4>sites rayonnant dans tout le Sud-Ouest, avec une implantation en Nouvelle Aquitaine en 2018.
+                            </h4>
                         </div>
                     </div>
 
-                    <div class="inner_part">
-                        <label for="slideImg" class="img">
-                            <img class="img_2"
-                                src="https://certificate.inseecu.net/wp-content/uploads/2020/11/shutterstock_1361286887-2.png">
-                        </label>
-                        <div class="content content_2">
-                            <div class="title">Deuxième étape</div>
-                            <div class="text">
-                                Lancement et déploiement du projet (Conception et paramétrage)
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inner_part">
-                        <label for="slideImg" class="img">
-                            <img class="img_3" src="https://www.studyrama.com/IMG/arton806.png">
-                        </label>
-                        <div class="content content_3">
-                            <div class="title">Troisième étape</div>
-                            <div class="text">
-                                Formation et Validation
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inner_part">
-                        <label for="slideImg" class="img">
-                            <img class="img_4"
-                                src="https://s-formations.com/wp-content/uploads/2019/11/programme-formation-1.jpg">
-                        </label>
-                        <div class="content content_4">
-                            <div class="title">Quatrième étape</div>
-                            <div class="text">
-                                Démarrage et accompagnement
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inner_part">
-                        <label for="slideImg" class="img">
-                            <img class="img_5"
-                                src="https://www.chevinfleet.com/wp-content/uploads/2018/05/Maintenance-Management-NEW.jpg">
-                        </label>
-                        <div class="content content_5">
-                            <div class="title">Dernière étape</div>
-                            <div class="text">
-                                Maintenance
-                            </div>
-                        </div>
+    
+    
+                    <div class="caplaser-main-container-number fourth">
+                        <h2>1379</h2>
+                        <h4>clients, tous secteurs d’activité confondus (80% du CA 2019 dans les TPE et PME / PMI).</h4>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="caplaser-container">
-            <h3 class="mx-auto caplaser-titre ll title-bold">Nos produits</h3>
-        </div>
-
-        <div class="caplaser-container mt-5">
-            <div class="caplaser-container-card gestion">
-                <div class="caplaser-container-card-img">
-                    <img width="100%" height="100%"
-                        src="https://edito.regionsjob.com/xjob/wp-content/uploads/sites/3/2014/11/gestionnaire-comptable.jpg">
-                </div>
-                <h3 class="caplaser-container-card-h3">
-                    Comptabilité / Finances
-                </h3>
-                <a href="/gestion/comptabilite-finances.html" class="caplaser-container-card-btn">
-                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
-                </a>
-            </div>
-
-            <div class="caplaser-container-card gestion">
-                <div class="caplaser-container-card-img">
-                    <img width="100%" height="100%"
-                        src="https://www.leparisien.fr/resizer/hxbLNaLKzk0xhsxtGZUSIbQ--OU=/932x582/arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/IAS6FKJKM3JBD4VJLGXAAZERT4.jpg"
-                        alt="businessman sunrise">
-                </div>
-                <h3 class="caplaser-container-card-h3">
-                    Paie & RH
-                </h3>
-                <a href="/gestion/Paie&RH.html" class="caplaser-container-card-btn">
-                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
-                </a>
-            </div>
-
-            <div class="caplaser-container-card gestion">
-                <div class="caplaser-container-card-img">
-                    <img width="100%" height="100%"
-                        src="http://cabinet-impulse.fr/wp-content/uploads/2020/01/cropped-logiciel-gestion-commerciale-4.jpg"
-                        alt="businessman sunrise">
-                </div>
-                <h3 class="caplaser-container-card-h3">
-                    Gestion commerciale
-                </h3>
-                <a href="/gestion/GESCO-Gestion-de-Production-CRM.html" class="caplaser-container-card-btn">
-                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
-                </a>
-            </div>
-
-            <div class="caplaser-container-card gestion">
-                <div class="caplaser-container-card-img">
-                    <img width="100%" height="100%"
-                        src="https://www.alpinfor.com/wp-content/uploads/2015/09/gestion-production.jpg"
-                        alt="businessman sunrise">
-                </div>
-                <h3 class="caplaser-container-card-h3">
-                    Gestion production
-                </h3>
-                <a href="/gestion/GESCO-Gestion-de-Production-CRM.html" class="caplaser-container-card-btn">
-                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
-                </a>
-            </div>
-
-
-        </div>
-
-        <div class="caplaser-container mt-5">
-            <div class="caplaser-container-card gestion">
-                <div class="caplaser-container-card-img">
-                    <img width="100%" height="100%"
-                        src="https://360suite.io/wp-content/uploads/2019/10/bi-survey-report.png"
-                        alt="businessman sunrise">
-                </div>
-                <h3 class="caplaser-container-card-h3">
-                    CRM
-                </h3>
-                <a href="/gestion/GESCO-Gestion-de-Production-CRM.html" class="caplaser-container-card-btn">
-                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
-                </a>
-            </div>
-
-            <div class="caplaser-container-card gestion">
-                <div class="caplaser-container-card-img">
-                    <img width="100%" height="100%"
-                        src="https://jeunediplome.net/wp-content/uploads/2020/03/bi-business-intelligence-ts-100646689-large.jpg"
-                        alt="businessman sunrise">
-                </div>
-                <h3 class="caplaser-container-card-h3">
-                    BI & Reporting
-                </h3>
-                <a href="/gestion/BI-Dematerialisation.html" class="caplaser-container-card-btn">
-                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
-                </a>
-            </div>
-
-            <div class="caplaser-container-card gestion">
-                <div class="caplaser-container-card-img">
-                    <img width="100%" height="100%"
-                        src="https://www.efalia.com/wp-content/uploads/2020/01/dematerialisation-facture-3.png"
-                        alt="businessman sunrise">
-                </div>
-                <h3 class="caplaser-container-card-h3">
-                    Dématerialisation
-                </h3>
-                <a href="/gestion/BI-Dematerialisation.html" class="caplaser-container-card-btn">
-                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
-                </a>
-            </div>
-
-            <div class="caplaser-container-card gestion">
-                <div class="caplaser-container-card-img">
-                    <img width="100%" height="100%"
-                        src="https://www.generali.fr/sites/default/files-d8/2020-01/achat-terre-agricole_1170x480.jpg"
-                        alt="businessman sunrise">
-                </div>
-                <h3 class="caplaser-container-card-h3">
-                    APPLICATIFS MÉTIERS
-                </h3>
-                <a href="/gestion/ApplicatifsMetiers.html" class="caplaser-container-card-btn">
-                    <img width="100%" height="100%" src="/sources/img/Menu/picto_plus_menu_bleu.svg" alt="">
-                </a>
+            <div class="caplaser-main-container accueilContact">
+                <h2>Echangeons ensemble !</h2>
+                <a href="/">Contactez-nous</a>
             </div>
         </div>
-
-        <div class="caplaser-container">
-            <h3 class="mx-auto caplaser-titre ll title-bold">Nos Partenaires</h3>
-        </div>
-
-        <div class="caplaser-container partenaire mt-0">
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/Cegid_logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/divalto_Logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/hrmaps_logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/OpenBee_logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/reportone_logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/Sage_logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/qweeby_logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/silaexpert_logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/mapping_logo.svg" alt="">
-                </a>
-            </div>
-            <div class="caplaser-container-partenaire">
-                <a href="">
-                    <img src="/sources/img/icon/compagnons_logo.svg" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- <div class="caplaser-fullcontainer">
-            <div class="caplaser-fullcontainer-partenaire">
-                <div class="caplaser-fullcontainer-partenaire-slider">
-                    <div class="caplaser-fullcontainer-partenaire-slider-slide">
-                        <a href="/"><img src="/sources/img/icon/Cegid_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/divalto_Logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/hrmaps_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/OpenBee_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/reportone_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/Sage_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/qweeby_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/silaexpert_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/mapping_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/compagnons_logo.svg" alt=""></a>
-                    </div>
-                    <div class="caplaser-fullcontainer-partenaire-slider-slide">
-                        <a href="/"><img src="/sources/img/icon/Cegid_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/divalto_Logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/hrmaps_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/OpenBee_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/reportone_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/Sage_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/qweeby_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/silaexpert_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/mapping_logo.svg" alt=""></a>
-                        <a href="/"><img src="/sources/img/icon/compagnons_logo.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </main>
 
     <footer class="caplaser-footer">
@@ -671,6 +489,8 @@
     </footer>
 
     <script src="/js/slider.js"></script>
+    <script src="/js/smoothScroll.js"></script>
+    <script src="/js/header.js" defer></script>
 </body>
 
 </html>
