@@ -1,12 +1,12 @@
 <!DOCTYPE html lang="fr-FR">
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ma description personnalisée"> <!-- Meta Description -->
     <title>Caplaser</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
@@ -14,77 +14,148 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
-        integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
-        crossorigin="anonymous" />
 </head>
 
 <body class="bodygestion">
     <header class="caplaser-header">
         <div class="caplaser-header-logo">
             <a href="/">
-                <img width="100%" height="100%" class="caplaser-header-logo-logo" src="/sources/img/logo_caplaser.svg"
+                <img width="100%" height="100%" class="caplaser-header-logo-logo" src="./sources/img/logo_caplaser.svg"
                     alt="Logo Caplaser">
             </a>
         </div>
-        <div class="caplaser-header-logo">
-            <div class="caplaser-header-logo-top">
-                <ul class="caplaser-header-logo-top-ul">
-                    <li class="caplaser-header-logo-top-ul-li">
-                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
-                            <span class="caplaser-header-logo-top-ul-li-a-span">Espace Client</span>
-                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-user"></i>
+        <div class="caplaser-header-menu">
+            <div class="caplaser-header-menu-top">
+                <ul class="caplaser-header-menu-top-ul">
+                    <li class="caplaser-header-menu-top-ul-li">
+                        <a class="caplaser-header-menu-top-ul-li-a" href="/">
+                            <span class="caplaser-header-menu-top-ul-li-a-span">Espace Client</span>
+                            <i class="caplaser-header-menu-top-ul-li-a-i far fa-user"></i>
                         </a>
                     </li>
-                    <li class="caplaser-header-logo-top-ul-li">
-                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
-                            <span class="caplaser-header-logo-top-ul-li-a-span">Recrutement</span>
-                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-file-alt"></i>
+                    <li class="caplaser-header-menu-top-ul-li">
+                        <a class="caplaser-header-menu-top-ul-li-a" href="/">
+                            <span class="caplaser-header-menu-top-ul-li-a-span">Recrutement</span>
+                            <i class="caplaser-header-menu-top-ul-li-a-i far fa-file-alt"></i>
                         </a>
                     </li>
-                    <li class="caplaser-header-logo-top-ul-li">
-                        <a class="caplaser-header-logo-top-ul-li-a" href="/">
-                            <span class="caplaser-header-logo-top-ul-li-a-span">Contact</span>
-                            <i class="caplaser-header-logo-top-ul-li-a-i far fa-envelope"></i>
+                    <li class="caplaser-header-menu-top-ul-li">
+                        <a class="caplaser-header-menu-top-ul-li-a" href="/">
+                            <span class="caplaser-header-menu-top-ul-li-a-span">Contact</span>
+                            <i class="caplaser-header-menu-top-ul-li-a-i far fa-envelope"></i>
                         </a>
                     </li>
-                    <li class="caplaser-header-logo-top-ul-liSearch">
+                    <li class="caplaser-header-menu-top-ul-liSearch">
 
-                        <input id="search" class="caplaser-header-logo-top-ul-li-a-span-input" type="text"
+                        <input id="search" class="caplaser-header-menu-top-ul-li-a-span-input" type="text"
                             placeholder="Rechercher..." aria-label="search">
                         <label for="search">Recherche</label>
-                        <i class="caplaser-header-logo-top-ul-li-a-i fas fa-search"></i>
+                        <i class="caplaser-header-menu-top-ul-li-a-i fas fa-search"></i>
                     </li>
                 </ul>
             </div>
-            <div class="caplaser-header-logo-bottom">
-                <nav class="caplaser-header-logo-bottom-nav">
-                    <ul class="caplaser-header-logo-bottom-nav-ul">
-                        <li class="caplaser-header-logo-bottom-nav-ul-li">
-                            <div class="caplaser-header-logo-bottom-nav-ul-li-competences">
+            <div class="caplaser-header-menu-bottom">
+                <nav class="caplaser-header-menu-bottom-nav">
+                    <ul class="caplaser-header-menu-bottom-nav-ul">
+                        <li class="caplaser-header-menu-bottom-nav-ul-li">
+                            <div class="caplaser-header-menu-bottom-nav-ul-li-competences">
                                 Nos compétences <i
-                                    class="caplaser-header-logo-bottom-nav-ul-li-a-i fas fa-angle-down"></i>
+                                    class="caplaser-header-menu-bottom-nav-ul-li-a-i fas fa-angle-down"></i>
                             </div>
-
+                            <ul class="caplaser-header-menu-bottom-nav-ul-li-a-ul">
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/Cloud.html">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Cloud
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Sécurisez, sauvegardez, partagez, collaborez grâce à la puissance du Cloud
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="./sources/img/Menu/picto_cloud_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Infastructure
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Conseil, déploiement, maintenance : toute l’IT pour votre entreprise
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="./sources/img/Menu/picto_infra_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Conseil
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Bénéficiez d’audits et de conseils de spécialistes selon vos besoins
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="./sources/img/Menu/picto_conseil_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Développement
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Sites internet responsives, applications, intranets / extranets
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="./sources/img/Menu/picto_web_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/Gestion.html">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Gestion
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Dématérialisez la gestion de votre entreprise : bulletins de paie, factures,
+                                            RH…
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="./sources/img/Menu/picto_gestion_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li">
+                                    <a class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a" href="/">
+                                        <h2 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h2">
+                                            Sécurité
+                                        </h2>
+                                        <h3 class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-h3">
+                                            Vos données protégées sur notre datacenter situé en Occitanie
+                                        </h3>
+                                        <img width="100%" height="100%"
+                                            class="caplaser-header-menu-bottom-nav-ul-li-a-ul-li-a-img"
+                                            src="./sources/img/Menu/picto_securite_menu_bleu.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="caplaser-header-logo-bottom-nav-ul-li">
-                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                        <li class="caplaser-header-menu-bottom-nav-ul-li">
+                            <a class="caplaser-header-menu-bottom-nav-ul-li-a" href="/">
                                 Événements
                             </a>
                         </li>
-                        <li class="caplaser-header-logo-bottom-nav-ul-li">
-                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                        <li class="caplaser-header-menu-bottom-nav-ul-li">
+                            <a class="caplaser-header-menu-bottom-nav-ul-li-a" href="/">
                                 Le Groupe Caplaser
                             </a>
                         </li>
-                        <li class="caplaser-header-logo-bottom-nav-ul-li">
-                            <a class="caplaser-header-logo-bottom-nav-ul-li-a" href="/">
+                        <li class="caplaser-header-menu-bottom-nav-ul-li">
+                            <a class="caplaser-header-menu-bottom-nav-ul-li-a" href="/">
                                 Blog
                             </a>
                         </li>
