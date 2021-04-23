@@ -1,0 +1,50 @@
+
+  .transition-card {
+    transform-origin: center;
+    opacity: 1 !important;
+    transition: all .5s ease !important;
+    transform: translateY(0px) !important;
+  }
+
+  html.is-animating .transition-card {
+    opacity: 0 !important;
+    transform: translateY(50px) !important;
+  }
+
+
+  .transition-card:nth-child(1) {
+    transition-delay: 0s !important;
+  }
+  .transition-card:nth-child(2) {
+    transition-delay: .07s !important;
+  }
+  .transition-card:nth-child(3) {
+    transition-delay: .14s !important;
+  }
+  .transition-card:nth-child(4) {
+    transition-delay: .21s !important;
+  }
+  .transition-card:nth-child(5) {
+    transition-delay: .28s !important;
+  }
+  .transition-card:nth-child(6) {
+    transition-delay: .35s !important;
+  }
+  .transition-card:nth-child(7) {
+    transition-delay: .42s !important;
+  }
+  .transition-card:nth-child(8) {
+    transition-delay: .49s !important;
+  }
+  .transition-card:nth-child(9) {
+    transition-delay: .56s !important;
+  }
+  .transition-card:nth-child(10) {
+    transition-delay: .63s !important;
+  }
+  .transition-card:nth-child(11) {
+    transition-delay: .70s !important;
+  }
+  .transition-card:nth-child(12) {
+    transition-delay: .77s !important;
+  }

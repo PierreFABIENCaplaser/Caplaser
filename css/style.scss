@@ -18,25 +18,10 @@ main {
 
 @import "cloud/cloud.scss";
 
-
 @import "slider.scss";
 @import "card.scss";
 @import "footer.scss";
-
-@import "./gestion/gestion.scss";
-@import "./gestion/nav.scss";
-@import "./gestion/sliderPartenaire.scss";
-@import "./gestion/timeline.scss";
-@import "./gestion/gestion-card.scss";
-@import "./gestion/box.scss";
-@import "./gestion/mediaqueries.scss";
-@import "./gestion/tulipe.scss";
-@import "./gestion/partenaire.scss";
-@import "./gestion/PaieRH.scss";
-@import "./gestion/comptafinances.scss";
-@import "./gestion/BiDematerialisation.scss";
-@import "./gestion/ApplicatifsMetiers.scss";
-
+@import "transition.scss";
 
 .caplaser-main-titre {
     margin-top: 70px !important;    
@@ -89,19 +74,22 @@ main {
 }
 
 
+  .ttransition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+      position: fixed;
+      width: 150px;
+      height: 150px;
+      background-color: red !important;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 25px;
+  }
 
 
